@@ -1,6 +1,7 @@
-
-<p>product-list works!</p>
-<app-product-card></app-product-card>
-@for(product of productsState.state().products; track product) {
-    <p>{{product.title}}</p>
-}
+<div class="row">
+    @for(product of productsState.state().products; track product) {
+        <div class="card border col-4">
+            <app-product-card [product]="product" ></app-product-card>
+        </div>
+    }
+</div>
