@@ -1,0 +1,6 @@
+
+<p>product-list works!</p>
+<app-product-card></app-product-card>
+@for(product of productsState.state().products; track product) {
+    <p>{{product.title}}</p>
+}
