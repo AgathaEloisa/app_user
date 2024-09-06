@@ -1,6 +1,6 @@
 <div class="row">
     @for(product of productsState.state().products; track product) {
-        <div class="card border col-4">
+        <div class="col-4">
             <app-product-card [product]="product" ></app-product-card>
         </div>
     }
